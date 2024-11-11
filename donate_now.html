@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-purple: #5b21b6;
+            --light-purple: #7c3aed;
+            --very-light-purple: #f3e8ff;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: var(--light-purple);
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--white);
+        }
+
+        h1 {
+            color: var(--primary-purple);
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: var(--very-light-purple);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary-purple);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--light-purple);
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary-purple);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .button-link:hover {
+            background-color: var(--light-purple);
+        }
+
+        .footer {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .radio-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .consent-box {
+            background-color: var(--white);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            background-color: var(--white);
+        }
+
+        #myHeader {
+            margin-bottom: 30px;
+        }
+    </style>
+    <title>Donation Management System</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="donate_now.html">Donate Now</a></li>
+                <li><a href="Contact_us.html">Contacts</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div id="myHeader">
+            <h1>Welcome to Udaan</h1>
+            <h1>Make a Donation</h1>
+        </div>
+        <form method="post" action="donate_now.php">
+            <label for="donorName">Your Name:</label>
+            <input type="text" id="donorName" name="donorName" required>
+
+            <label for="donorEmail">Your Email:</label>
+            <input type="email" id="donorEmail" name="donorEmail" required>
+
+            <label for="donationAmount">Donation Amount:</label>
+            <input type="number" id="donationAmount" name="donationAmount" required>
+
+            <label for="campaign">Select Campaign:</label>
+            <select id="campaign" name="campaign">
+                <option value="" disabled selected>Select a campaign</option>
+                <option value="campaign1">National Defence Fund</option>
+                <option value="campaign2">Prime Minister's National Relief Fund</option>
+                <option value="campaign3">Prime Minister's Drought Relief Fund</option>
+                <option value="campaign4">National Children's Fund</option>
+            </select>
+
+            <label for="aadhar">Aadhar Number:</label>
+            <input type="text" id="aadhar" name="aadhar">
+
+            <label for="pan">PAN Number:</label>
+            <input type="text" id="pan" name="pan">
+
+            <label for="income">Income:</label>
+            <input type="number" id="income" name="income">
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label>Tax Deductible Donation:</label>
+            <div class="radio-group">
+                <input type="radio" id="taxDeductibleYes" name="taxDeductible" value="yes">
+                <label for="taxDeductibleYes" style="display: inline;">Yes</label>
+                <input type="radio" id="taxDeductibleNo" name="taxDeductible" value="no">
+                <label for="taxDeductibleNo" style="display: inline;">No</label>
+            </div>
+
+            <label for="taxIdentificationNumber">Tax Identification Number (if applicable):</label>
+            <input type="text" id="taxIdentificationNumber" name="taxIdentificationNumber">
+
+            <label for="organizationName">Organization Name:</label>
+            <input type="text" id="organizationName" name="organizationName">
+
+            <label for="comments">Comments/Additional Notes:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <div class="consent-box">
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent" style="display: inline;">
+                    I hereby declare that I am a citizen of India, making this donation out of my own funds. The information provided above is correct to the best of my knowledge. I know that all further communications will be done on contact details provided above.
+                </label>
+            </div>
+
+            <input type="submit" class="button-link" value="Donate">
+        </form>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">2023 Udaan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

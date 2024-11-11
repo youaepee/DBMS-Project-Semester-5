@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #faf5ff; /* Light purple background */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #6b46c1 0%, #805ad5 100%); /* Purple gradient */
+            color: #fff;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            flex: 1;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: #44337a; /* Dark purple */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 200px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a5568;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .donate-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #805ad5 0%, #6b46c1 100%);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(107, 70, 193, 0.2);
+        }
+
+        .donate-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(107, 70, 193, 0.3);
+            background: linear-gradient(135deg, #6b46c1 0%, #553c9a 100%);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: #fff;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.9;
+        }
+    </style>
+    <title>Udaan - Making the World a Better Place</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="donate_now.html">Donate Now</a></li>
+                <li><a href="Contact_us.html">Contacts</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <h1>Udaan</h1>
+        <img src="Udaan logo.jpg">
+        <p>Welcome to Udaan, a charitable organization dedicated to uplifting lives and spreading hope. Our mission is simple: to make a meaningful difference in communities that need it most. At Udaan, compassion fuels everything we do, turning small acts of kindness into powerful forces for change. Join us as we work to create brighter futures through initiatives that transform lives and inspire others to give back. Together, let’s build a world where generosity and hope soar. Begin your journey with Udaan and be part of a legacy of impact and care.</p>
+        <a href="donate_now.html" class="donate-button">Donate Now</a>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">2023 Udaan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

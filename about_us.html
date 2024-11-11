@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-purple: #5b21b6;
+            --light-purple: #7c3aed;
+            --very-light-purple: #f3e8ff;
+            --white: #ffffff;
+            --text-dark: #1f2937;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: var(--light-purple);
+        }
+
+        .content {
+            flex: 1;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            background-color: var(--very-light-purple);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 20px auto;
+        }
+
+        h1 {
+            color: var(--primary-purple);
+            font-size: 36px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 60%;
+            height: 3px;
+            background-color: var(--light-purple);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            color: var(--primary-purple);
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: left;
+            color: #4a5568;
+        }
+
+        .section-divider {
+            width: 50px;
+            height: 3px;
+            background-color: var(--light-purple);
+            margin: 30px auto;
+        }
+
+        .footer {
+            background-color: var(--primary-purple);
+            color: var(--white);
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 40px 20px;
+            }
+            
+            .about-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+    <title>About Us - Udaan</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="donate_now.html">Donate Now</a></li>
+                <li><a href="Contact_us.html">Contacts</a></li>
+                <li><a href="Faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <h1>About Us</h1>
+        
+        <div class="about-section">
+            <p>Welcome to Udaan, where compassion meets convenience. We are more than just a website; we are a platform dedicated to connecting people with the power to make a difference. Our mission is to facilitate meaningful and impactful giving by providing a seamless and secure way for individuals to support their favorite charities and causes.</p>
+
+            <div class="section-divider"></div>
+
+            <h2>Our Purpose</h2>
+            <p>At Udaan, we understand that the desire to give back to the community and support those in need is a fundamental aspect of the human spirit. We believe that everyone has the capacity to make a positive change in the world, regardless of their background or resources. That's why we have created a user-friendly and transparent platform that empowers you to donate to your favorite charities effortlessly.</p>
+
+            <div class="section-divider"></div>
+
+            <h2>Join Us in Creating Hope</h2>
+            <p>At Udaan, we believe in the strength of collective action. By coming together and championing the causes that matter most to us, we can shape a brighter, more hopeful future for everyone. Join us on this journey of giving, where every donation, regardless of size, plays a part in making the world a better place.
+
+Your kindness holds the power to change lives, and we are here to help make that change a reality. Explore our website to connect with charities that resonate with you, and take the first step toward making a difference today. Together, we can bring hope to those in need and inspire lasting change for generations to come.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">2023 Udaan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

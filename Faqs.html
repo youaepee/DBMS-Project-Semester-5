@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5ff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #6b46c1;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center; /* Changed to center */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Changed to center */
+            align-items: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px; /* Changed to equal margin on both sides */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 5px 0;
+        }
+
+        .navbar a:hover {
+            color: #e9d8fd;
+        }
+
+        .navbar a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #e9d8fd;
+            transition: width 0.3s ease;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        .content {
+            flex: 1;
+            padding: 60px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #44337a;
+            font-weight: bold;
+        }
+
+        .faq-item {
+            text-align: left;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(107, 70, 193, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #553c9a;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        .footer {
+            background-color: #44337a;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.9;
+        }
+    </style>
+    <title>FAQ - GiveHope</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="donate_now.html">Donate Now</a></li>
+                <li><a href="Contact_us.html">Contacts</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+      <div class="content">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+    <div class="faq-item">
+        <p class="faq-question">Q1: What is Udaan all about?</p>
+        <p class="faq-answer">A1: Udaan is a charitable organization focused on spreading hope and kindness. We believe in the power of generosity to create a positive impact in society.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q2: How can I make a donation to Udaan?</p>
+        <p class="faq-answer">A2: You can make a donation by clicking on the "Donate Now" button on our website and following the instructions provided.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q3: Can I volunteer with Udaan?</p>
+        <p class="faq-answer">A3: Yes, we welcome volunteers! Please visit our "Contact Us" page to express your interest in volunteering.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q4: How are donations used by Udaan?</p>
+        <p class="faq-answer">A4: All donations to Udaan are used to fund various projects focused on education, healthcare, and community development initiatives.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q5: Is my donation to Udaan tax-deductible?</p>
+        <p class="faq-answer">A5: Yes, Udaan is a registered charitable organization, and donations are tax-deductible as per applicable laws.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q6: Can I make a recurring donation?</p>
+        <p class="faq-answer">A6: Absolutely! Our website offers the option to set up recurring donations to support Udaan's ongoing programs.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q7: How do I stay updated with Udaan's activities and events?</p>
+        <p class="faq-answer">A7: You can subscribe to our newsletter or follow us on social media for the latest updates on Udaan's activities and events.</p>
+    </div>
+    <div class="faq-item">
+        <p class="faq-question">Q8: Can I partner with Udaan for a charitable event?</p>
+        <p class="faq-answer">A8: Yes, we welcome collaborations! Please reach out via our "Contact Us" page to discuss partnership opportunities.</p>
+    </div>
+</div>
+
+    <footer class="footer">
+        <p class="footer-text">2023 GiveHope. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
